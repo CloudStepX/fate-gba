@@ -9,6 +9,17 @@ android {
         versionCode 1
         versionName '1.0'
     }
+    signingConfigs {
+        fate {
+            storeFile file('fate.keystore')
+            storePassword 'fatefate'
+            keyAlias 'fate'
+            keyPassword 'fatefate'
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.fate }
+    }
     compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }
 dependencies { implementation 'androidx.webkit:webkit:1.11.0' }

@@ -1,1 +1,1 @@
-FATE GBA 1.1: adds in-app update loading (Menu > Updates).
+Fixed signing key so future builds install over the old app.
