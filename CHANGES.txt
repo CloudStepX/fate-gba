@@ -1,0 +1,1 @@
+FATE GBA 1.1: adds in-app update loading (Menu > Updates).
